@@ -1,0 +1,15 @@
+{
+	"name": "awp-project-meet",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5c847958-b2c5-4ba8-bad6-9af44d456a76",
+		"tenantId": "55356e5d-032c-4c49-aa94-f3875a42680b"
+	}
+}
