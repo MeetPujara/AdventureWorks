@@ -1,0 +1,17 @@
+{
+	"name": "Create Views Gold",
+	"properties": {
+		"content": {
+			"query": "CREATE VIEW gold.calendar \nAS\nSELECT * FROM OPENROWSET(BULK'https://awstorageedataa.blob.core.windows.net/silver/AdventureWorks_Calendar/',FORMAT='PARQUET') as Quer1\n\nCREATE VIEW gold.customers \nAS\nSELECT * FROM OPENROWSET(BULK'https://awstorageedataa.blob.core.windows.net/silver/AdventureWorks_Customers/',FORMAT='PARQUET') as Quer1\n\nCREATE VIEW gold.prod_cat \nAS\nSELECT * FROM OPENROWSET(BULK'https://awstorageedataa.blob.core.windows.net/silver/Product_Categories/',FORMAT='PARQUET') as Quer1\n\nCREATE VIEW gold.products \nAS\nSELECT * FROM OPENROWSET(BULK'https://awstorageedataa.blob.core.windows.net/silver/AdventureWorks_Products/',FORMAT='PARQUET') as Quer1\n\nCREATE VIEW gold.returns \nAS\nSELECT * FROM OPENROWSET(BULK'https://awstorageedataa.blob.core.windows.net/silver/AdventureWorks_Returns/',FORMAT='PARQUET') as Quer1\n\nCREATE VIEW gold.sales_15 \nAS\nSELECT * FROM OPENROWSET(BULK'https://awstorageedataa.blob.core.windows.net/silver/AdventureWorks_Sales_2015/',FORMAT='PARQUET') as Quer1\n\nCREATE VIEW gold.sales_16\nAS\nSELECT * FROM OPENROWSET(BULK'https://awstorageedataa.blob.core.windows.net/silver/AdventureWorks_Sales_2016/',FORMAT='PARQUET') as Quer1\n\nCREATE VIEW gold.sales_17 \nAS\nSELECT * FROM OPENROWSET(BULK'https://awstorageedataa.blob.core.windows.net/silver/AdventureWorks_Sales_2017/',FORMAT='PARQUET') as Quer1\n\nCREATE VIEW gold.territories\nAS\nSELECT * FROM OPENROWSET(BULK'https://awstorageedataa.blob.core.windows.net/silver/AdventureWorks_Territories/',FORMAT='PARQUET') as Quer1\n\nCREATE VIEW gold.prod_subCat\nAS\nSELECT * FROM OPENROWSET(BULK'https://awstorageedataa.blob.core.windows.net/silver/Product_Subcategories/',FORMAT='PARQUET') as Quer1",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "aw_database",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
